@@ -1,16 +1,7 @@
 {% extends 'catalog/base.html' %}
 {% load my_tags %}
 {% block content %}
-    <div class="container">
-        <div class="row text-center">
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="display-4">Вся продукция</h1>
-                <p class="lead">Компания ООО "EComp" является профильным оптовым поставщиком и производителем
-                    электронных
-                    компонентов и электротехнической продукции для промышленного, а также торгового бизнеса.</p>
-            </div>
-        </div>
-    </div>
+    {% include 'catalog/includes/inc_product.html' %}
     <div class="container">
         <div class="row text-center">
             {% for object in object_list %}

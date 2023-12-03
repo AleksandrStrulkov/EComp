@@ -7,7 +7,7 @@ def home(request):
 	product_item = Product.objects.all()
 	context = {
 			'object_list': product_item,
-			'title': 'Каталог'
+			'title': 'Все товары'
 	}
 	return render(request, 'catalog/home.html', context)
 
@@ -20,7 +20,10 @@ def contacts(request):
 		message = request.POST.get('message')
 		# а также передается информация, которую заполнил пользователь
 		print(f'Имя: {name}\nТелефон: {phone}\nСообщение: {message}')
-	return render(request, 'catalog/contacts.html')
+	context = {
+			'title': 'Контакты'
+		}
+	return render(request, 'catalog/contacts.html', context)
 
 
 def one_product(request, pk):
@@ -35,7 +38,7 @@ def one_product(request, pk):
 def category(request):
 	context = {
 			'object_list': Category.objects.all(),
-			'title': 'Все наши комплектующие'
+			'title': 'Категории товаров'
 	}
 	return render(request, 'catalog/category.html', context)
 
