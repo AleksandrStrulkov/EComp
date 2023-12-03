@@ -1,22 +1,22 @@
-{{% extends 'catalog/base.html' %}
+{% extends 'catalog/base.html' %}
 {% load my_tags %}
 {% block content %}
     {% include 'catalog/includes/inc_product.html' %}
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
             {% for object in object_list %}
-                <div class="col-4">
-                    <div class="card shadow-sm">
+                <div class="col-4" >
+                    <div class="card shadow-sm" Style="border-color:#7777ff">
                         <div class="card-body">
                             <div class="container">
                                 <div class="card shadow-sm">
-                                    <img src="{% mediapath object.image %}" class="card-img-top"/>
+                                    <p><img src="{% mediapath object.image %}" width="150" height="150"> </p>
                                 </div>
                             </div>
                             <h6 class="card-text">Наименование:</h6>
-                            <p class="card-text">{{ object.name_product| title }}</p>
+                            <p class="card-text">{{ object.name_product| title|truncatechars:30 }} </p>
                             <h6 class="card-text">Описание:</h6>
-                            <p class="card-text">{{ object.description_product|truncatechars:100 }}</p>
+                            <p class="card-text">{{ object.description_product|truncatechars:50 }}</p>
                             <h6 class="card-text">Стоимость:</h6>
                             <p class="card-text">{{ object.price }} руб.</p>
                             <div class="d-flex justify-content-between align-items-center"></div>

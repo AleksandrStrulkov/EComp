@@ -6,17 +6,17 @@
         <div class="row text-center">
             {% for object in object_list %}
                 <div class="col-4">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card mb-4 box-shadow" Style="border-color:#7777ff">
                         <div class="card-header">
                             <h4 class="my-0 font-weight-normal">{{ object.name_category }}</h4>
                         </div>
                         <div class="card shadow-sm">
-                            <img src="{% mediapath object.image %}"  class="card-img-top"/>
+                            <p><img src="{% mediapath object.image %}" width="250" height="250"> </p>
                         </div>
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title"></h1>
                             <ul class="list-unstyled mt-3 mb-4 text-start m-3">
-                                <li>Описание: {{ object.description_category|truncatechars:500 }}</li>
+                                <li>Описание: {{ object.description_category|truncatechars:100 }}</li>
                                 <li>*******************************</li>
                                 <li>Категория: {{ object.name_category }}</li>
                             </ul>
