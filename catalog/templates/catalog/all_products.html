@@ -1,0 +1,36 @@
+{{% extends 'catalog/base.html' %}
+{% load my_tags %}
+{% block content %}
+    <div class="container">
+        <div class="row text-center">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">{{ title }}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            {% for object in object_list %}
+                <div class="col-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="card shadow-sm">
+                                    <img src="{% mediapath object.image %}" class="card-img-top"/>
+                                </div>
+                            </div>
+                            <h6 class="card-text">Наименование:</h6>
+                            <p class="card-text">{{ object.name_product| title }}</p>
+                            <h6 class="card-text">Описание:</h6>
+                            <p class="card-text">{{ object.description_product|truncatechars:100 }}</p>
+                            <h6 class="card-text">Стоимость:</h6>
+                            <p class="card-text">{{ object.price }} руб.</p>
+                            <div class="d-flex justify-content-between align-items-center"></div>
+                            <button type="button" class="btn btn-lg btn-block btn-outline-primary">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

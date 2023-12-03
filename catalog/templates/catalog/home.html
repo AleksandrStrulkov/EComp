@@ -1,0 +1,42 @@
+{% extends 'catalog/base.html' %}
+{% load my_tags %}
+{% block content %}
+    <div class="container">
+        <div class="row text-center">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 class="display-4">Вся продукция</h1>
+                <p class="lead">Компания ООО "EComp" является профильным оптовым поставщиком и производителем
+                    электронных
+                    компонентов и электротехнической продукции для промышленного, а также торгового бизнеса.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            {% for object in object_list %}
+                <div class="col-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">{{ object.name_product|truncatechars:27 }}</h4>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="{% mediapath object.image %}"  class="card-img-top"/>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">{{ object.price }} ₽</h1>
+                            <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                                <li>Описание: {{ object.description_product|truncatechars:50 }}</li>
+                                <li>*******************************</li>
+                                <li>Категория: {{ object.name_category }}</li>
+                                <li>*******************************</li>
+                                <li>Дата последнего изменения: {{ object.updated_at }}</li>
+                            </ul>
+                            <a href="/one_product/{{ object.pk }}" type="button" class="btn btn-lg btn-block
+                            btn-outline-primary">О товаре</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
