@@ -12,6 +12,8 @@ pillow = "^10.1.0"
 ipython = "^8.18.1"
 psycopg2 = "^2.9.9"
 django-dump-load-utf8 = "^0.0.4"
+slugify = "^0.0.1"
+pytils = "^0.4.1"
 
 
 [build-system]

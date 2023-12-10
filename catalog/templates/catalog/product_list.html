@@ -5,24 +5,20 @@
     <div class="container">
         <div class="row text-center">
             {% for object in object_list %}
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card mb-4 box-shadow" Style="border-color:#7777ff">
                         <div class="card-header">
                             <h4 class="my-0 font-weight-normal">{{ object.name_product|truncatechars:27 }}</h4>
                         </div>
-                        <div class="card shadow-sm">
-                            <p><img src="{% mediapath object.image %}" width="150" height="150"> </p>
-                        </div>
-{#                        <div class="card shadow-sm">#}
-{#                            <img src="{% mediapath object.image %}"  class="card-img-top"/>#}
-{#                        </div>#}
+                        <p><img src="{% mediapath object.image %}" alt="продукты" class="img-fluid" style="width:
+                        150px; height: 150px;"></p>
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">{{ object.price }} ₽</h1>
                             <ul class="list-unstyled mt-3 mb-4 text-start m-3">
                                 <li>Описание: {{ object.description_product|truncatechars:50 }}</li>
-                                <li>*******************************</li>
+                                <li>**************</li>
                                 <li>Категория: {{ object.name_category }}</li>
-                                <li>*******************************</li>
+                                <li>**************</li>
                                 <li>Дата последнего изменения: {{ object.updated_at }}</li>
                             </ul>
                             <a href="/one_product/{{ object.pk }}" type="button" class="btn btn-lg btn-block

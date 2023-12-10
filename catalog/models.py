@@ -32,6 +32,9 @@ class Product(models.Model):
 	image = models.ImageField(upload_to='category/', verbose_name='Изображение', **NULLABLE)
 	created_at = models.DateField(verbose_name='Дата создания')
 	updated_at = models.DateField(auto_now=True, verbose_name='Последнее изменение')
+	views_count = models.IntegerField(verbose_name='Просмотры', default=0)
+	slug = models.SlugField(verbose_name='slug', max_length=150, null=True, blank=True)
+
 
 	def __str__(self):
 		return f'{self.name_product}{self.description_product}{self.name_category}{self.price}' \
@@ -47,5 +50,17 @@ class Product(models.Model):
 			cursor.execute(f'ALTER SEQUENCE catalog_product_id_seq RESTART WITH 1;')
 
 
+class Contacts(models.Model):
+	contact_name = models.CharField(max_length=30, verbose_name='Ваше имя')
+	contact_email = models.CharField(max_length=30, verbose_name='Ваш email')
+	contact_text = models.TextField(verbose_name='Ваше сообщение', default='Cпасибо')
+
+	def __str__(self):
+		return f'{self.contact_name} - {self.contact_email}'
+
+	class Meta:
+		verbose_name = 'контакт'
+		verbose_name_plural = 'контакты'
+		ordering = ('contact_name',)
 
 
