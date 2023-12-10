@@ -1,15 +1,23 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, get_object_or_404, redirect
+from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
+from django.urls import reverse_lazy, reverse
 from catalog.models import Product, Category
+from pytils.translit import slugify
+
+# def home(request):
+# 	product_item = Product.objects.all()
+# 	context = {
+# 			'object_list': product_item,
+# 			'title': 'Все товары'
+# 	}
+# 	return render(request, 'catalog/product_list.html', context)
 
 
-def home(request):
-	product_item = Product.objects.all()
-	context = {
-			'object_list': product_item,
-			'title': 'Все товары'
+class ProductListView(ListView):
+	model = Product
+	extra_context = {
+			'title': "Все товары"
 	}
-	return render(request, 'catalog/home.html', context)
 
 
 def contacts(request):
