@@ -43,12 +43,12 @@ def one_product(request, pk):
 	return render(request, 'catalog/one_product.html', context)
 
 
-def category(request):
-	context = {
-			'object_list': Category.objects.all(),
-			'title': 'Категории товаров'
-	}
-	return render(request, 'catalog/category_list.html', context)
+# def category(request):
+# 	context = {
+# 			'object_list': Category.objects.all(),
+# 			'title': 'Категории товаров'
+# 	}
+# 	return render(request, 'catalog/category_list.html', context)
 
 
 class CategoryListView(ListView):
