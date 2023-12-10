@@ -32,6 +32,9 @@ class Product(models.Model):
 	image = models.ImageField(upload_to='category/', verbose_name='Изображение', **NULLABLE)
 	created_at = models.DateField(verbose_name='Дата создания')
 	updated_at = models.DateField(auto_now=True, verbose_name='Последнее изменение')
+	views_count = models.IntegerField(verbose_name='Просмотры', default=0)
+	slug = models.SlugField(verbose_name='slug', max_length=150, null=True, blank=True)
+
 
 	def __str__(self):
 		return f'{self.name_product}{self.description_product}{self.name_category}{self.price}' \

@@ -34,13 +34,32 @@ def contacts(request):
 	return render(request, 'catalog/contacts.html', context)
 
 
-def one_product(request, pk):
-	product_item = Product.objects.get(pk=pk)
-	context = {
-			'object_list': product_item,
-			'title': f'{product_item.name_product}'
-	}
-	return render(request, 'catalog/one_product.html', context)
+# def one_product(request, pk):
+# 	product_item = Product.objects.get(pk=pk)
+# 	context = {
+# 			'object_list': product_item,
+# 			'title': f'{product_item.name_product}'
+# 	}
+# 	return render(request, 'catalog/product_detail.html', context)
+
+
+class ProductDetailView(DetailView):
+	model = Product
+
+	def get_object(self, queryset=None):
+		self.object = super().get_object(queryset)
+		self.object.views_count += 1
+		self.object.save()
+		return self.object
+
+	def get_context_data(self, *args, **kwargs):
+		context_data = super().get_context_data(*args, **kwargs)
+
+		product_item = Product.objects.get(pk=self.object.pk)
+		context_data['title'] = f'{product_item.name_product}'
+
+		return context_data
+	
 
 
 # def category(request):
