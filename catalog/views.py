@@ -48,7 +48,14 @@ def category(request):
 			'object_list': Category.objects.all(),
 			'title': 'Категории товаров'
 	}
-	return render(request, 'catalog/category.html', context)
+	return render(request, 'catalog/category_list.html', context)
+
+
+class CategoryListView(ListView):
+	model = Category
+	extra_context = {
+			'title': "Категории товаров"
+	}
 
 
 def all_products(request, pk):
