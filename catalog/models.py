@@ -50,5 +50,17 @@ class Product(models.Model):
 			cursor.execute(f'ALTER SEQUENCE catalog_product_id_seq RESTART WITH 1;')
 
 
+class Contacts(models.Model):
+	contact_name = models.CharField(max_length=30, verbose_name='Ваше имя')
+	contact_email = models.CharField(max_length=30, verbose_name='Ваш email')
+	contact_text = models.TextField(verbose_name='Ваше сообщение', default='Cпасибо')
+
+	def __str__(self):
+		return f'{self.contact_name} - {self.contact_email}'
+
+	class Meta:
+		verbose_name = 'контакт'
+		verbose_name_plural = 'контакты'
+		ordering = ('contact_name',)
 
 
