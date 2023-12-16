@@ -4,6 +4,9 @@
     {% include 'catalog/includes/inc_product.html' %}
     <div class="container">
         <div class="row text-center">
+        <div class="col-12 mb-5">
+            <a href="{% url 'catalog:product_create'%}">Добавить продукт</a>
+        </div>
             {% for object in object_list %}
                 <div class="col-6">
                     <div class="card mb-4 box-shadow" Style="border-color:#7777ff">
@@ -23,6 +26,9 @@
                             </ul>
                             <a href="/one_product/{{ object.pk }}" type="button" class="btn btn-lg btn-block
                             btn-outline-primary">О товаре</a>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-link" href="{% url 'catalog:product_update' object.pk%}">Редактировать</a>
                         </div>
                     </div>
                 </div>
