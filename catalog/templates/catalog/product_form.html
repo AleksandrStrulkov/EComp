@@ -1,6 +1,7 @@
 {% extends 'catalog/base.html' %}
+{% load my_tags %}
 {% block content %}
-    {% include 'catalog/includes/inc_product.html' %}
+    {% include 'catalog/includes/inc_catalog.html' %}
     <div class="container">
         <form method="post" action="" class="row form-floating">
             <div class="row text-start">
@@ -9,9 +10,9 @@
                         <div class="card-header">
                             <h4 class="my-0 font-weight-normal">
                                 {% if object %}
-                                    Редактирование
+                                    Редактировать
                                 {% else %}
-                                    Создать продукт
+                                    Создать
                                 {% endif %}
                             </h4>
                         </div>
@@ -41,17 +42,17 @@
                                 {{ form.as_p }}
                                 {% if forloop.revcounter0 != 0 %}
                                     <hr>
-                                    {% if formset.non_form_errors %}
-                                        <div class="text-center">
-                                            <div class="text-primary-emphasis bg-warning border border-warning rounded-3">
-                                                {% for error in formset.non_form_errors %}
-                                                    <h6>{{ error }}</h6>
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                    {% endif %}
                                 {% endif %}
                             {% endfor %}
+                            {% if formset.non_form_errors %}
+                                <div class="text-center">
+                                    <div class="text-primary-emphasis bg-info-subtle border border-danger rounded-2">
+                                        {% for error in formset.non_form_errors %}
+                                            <h6>{{ error }}</h6>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

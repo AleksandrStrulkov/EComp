@@ -1,6 +1,7 @@
 {% extends 'catalog/base.html' %}
 {% load my_tags %}
 {% block content %}
+    {% include 'catalog/includes/inc_catalog.html' %}
     <div class="container">
         <div class="col-12 mb-5">
             <a class="btn btn-outline-primary" href="{% url "blog:create" %}">Добавить материал</a>

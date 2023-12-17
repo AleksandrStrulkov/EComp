@@ -35,6 +35,9 @@ class ContactsCreateView(CreateView):
 	form_class = ContactForm
 	# fields = ('contact_name', 'contact_email', 'contact_text')
 	success_url = reverse_lazy('catalog:contacts')
+	extra_context = {
+			'title': "Обратная связь"
+	}
 
 	def form_valid(self, form):
 		if form.is_valid():
@@ -169,3 +172,6 @@ class ProductUpdateView(UpdateView):
 class ProductDeleteView(DeleteView):
 	model = Product
 	success_url = reverse_lazy('catalog:home')
+	extra_context = {
+			'title': "Удаление товара",
+	}
