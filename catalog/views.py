@@ -1,11 +1,12 @@
 import json
 
+from django import forms
 from django.forms import inlineformset_factory
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from django.urls import reverse_lazy, reverse
 from catalog.models import Product, Category, Contacts, Versions
-from catalog.forms import ProductForm, VersionForm, ContactForm
+from catalog.forms import ProductForm, VersionForm, ContactForm, VersionBaseInlineFormSet
 from django.db import transaction
 
 
@@ -41,9 +42,9 @@ class ContactsCreateView(CreateView):
 			new_contact.personal_manager = self.request.user
 			new_contact.save()
 			contact_dict = {
-				"Имя": new_contact.contact_name,
-				"Почта": new_contact.contact_email,
-				"Сообщение": new_contact.contact_text,
+					"Имя": new_contact.contact_name,
+					"Почта": new_contact.contact_email,
+					"Сообщение": new_contact.contact_text,
 			}
 			with open("contacts.json", 'a', encoding='UTF-8') as f:
 				json.dump(contact_dict, f, indent=2, ensure_ascii=False)
@@ -101,6 +102,8 @@ class ProductCreateView(CreateView):
 
 	def get_context_data(self, **kwargs):
 		context_data = super().get_context_data(**kwargs)
+		context_data['category'] = Category.objects.all()
+		context_data['title'] = 'Создание товара'
 		VersionFormSet = inlineformset_factory(self.model, Versions, form=VersionForm, extra=1)
 		if self.request.method == 'POST':
 			formset = VersionFormSet(self.request.POST)
@@ -113,11 +116,14 @@ class ProductCreateView(CreateView):
 	def form_valid(self, form):
 		context_data = self.get_context_data()
 		formset = context_data['formset']
-		with transaction.atomic():
+		# with transaction.atomic():
+		if form.is_valid():
 			self.object = form.save()
 			if formset.is_valid():
 				formset.instance = self.object
 				formset.save()
+			else:
+				return self.form_invalid(form)
 
 		return super().form_valid(form)
 
@@ -125,15 +131,18 @@ class ProductCreateView(CreateView):
 class ProductUpdateView(UpdateView):
 	model = Product
 	form_class = ProductForm
-	# success_url = reverse_lazy('catalog:home')
 
 	def get_success_url(self):
 		return reverse('catalog:product_update', args=[self.kwargs.get('pk')])
-		# return reverse('catalog:home')
 
 	def get_context_data(self, **kwargs):
 		context_data = super().get_context_data(**kwargs)
-		VersionFormSet = inlineformset_factory(self.model, Versions, form=VersionForm, extra=1)
+		context_data['category'] = Category.objects.all()
+		context_data['title'] = 'Редактирование товара'
+		VersionFormSet = inlineformset_factory(
+			Product, Versions, form=VersionForm, extra=1,
+			formset=VersionBaseInlineFormSet
+			)
 		if self.request.method == 'POST':
 			formset = VersionFormSet(self.request.POST, instance=self.object)
 		else:
@@ -146,21 +155,17 @@ class ProductUpdateView(UpdateView):
 		context_data = self.get_context_data()
 		formset = context_data['formset']
 		with transaction.atomic():
-			self.object = form.save()
-			if formset.is_valid():
-				formset.instance = self.object
-				formset.save()
+			if form.is_valid():
+				self.object = form.save()
+				if formset.is_valid():
+					formset.instance = self.object
+					formset.save()
+				else:
+					return self.form_invalid(form)
 
 		return super().form_valid(form)
-
 
 
 class ProductDeleteView(DeleteView):
 	model = Product
 	success_url = reverse_lazy('catalog:home')
-
-
-
-
-
-

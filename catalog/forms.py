@@ -1,4 +1,6 @@
 from django import forms
+from django.forms import BaseInlineFormSet
+
 from catalog.models import Product, Versions, Contacts, StatusProduct
 
 
@@ -41,6 +43,7 @@ class ProductForm(StyleFormMixin, forms.ModelForm):
 class VersionForm(forms.ModelForm):
 	class Meta:
 		model = Versions
+		# exclude = ('product',)
 		fields = ('number_version', 'name', 'active_version')
 		widgets = {
 				'number_version': forms.NumberInput(attrs={'class': 'form-control'}),
@@ -54,3 +57,13 @@ class ContactForm(StyleFormMixin, forms.ModelForm):
 	class Meta:
 		model = Contacts
 		fields = ('contact_name', 'contact_email', 'contact_text',)
+
+
+class VersionBaseInlineFormSet(BaseInlineFormSet):
+	def clean(self):
+		super().clean()
+		active_list = [form.cleaned_data['active_version'] for form in self.forms if 'active_version' in
+						form.cleaned_data]
+		if active_list.count(True) > 1:
+			print("У продукта возможна только одна активная версия!")
+			raise forms.ValidationError("У продукта возможна только одна активная версия!")
