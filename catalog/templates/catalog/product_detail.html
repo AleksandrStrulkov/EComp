@@ -1,16 +1,16 @@
 {% extends 'catalog/base.html' %}
 {% load my_tags %}
 {% block content %}
-    {% include 'catalog/includes/inc_product.html' %}
+    {% include 'catalog/includes/inc_catalog.html' %}
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
                 <div class="card mb-4 box-shadow" Style="border-color:#7777ff">
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">Цена в розницу: {{ object.price }} руб. </h1>
-{#                        <div class="card shadow-sm">#}
+                        <h3 class="card-title pricing-card-title">Цена в розницу: {{ object.price }} руб. </h3>
+                        {#                        <div class="card shadow-sm">#}
                         <p><img src="{% mediapath object.image %}" width="200"></p>
-{#                        </div>#}
+                        {#                        </div>#}
                         <table class="table table-striped">
                             <tr>
                                 <td class="w-25">Описание:</td>
@@ -27,6 +27,7 @@
                         </table>
                         <div class="card-footer">Просмотры: {{ object.views_count }}</div>
                         <button type="button" class="btn btn-lg btn-block btn-outline-primary">В корзину</button>
+
                     </div>
                 </div>
             </div>

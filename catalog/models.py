@@ -28,8 +28,8 @@ class Product(models.Model):
 	name_product = models.CharField(max_length=100, verbose_name='Наименование')
 	description_product = models.TextField(verbose_name='Описание', **NULLABLE)
 	name_category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='Категория')
-	price = models.IntegerField(verbose_name='Цена')
-	image = models.ImageField(upload_to='category/', verbose_name='Изображение', **NULLABLE)
+	price = models.DecimalField(decimal_places=2, max_digits=8, verbose_name='Цена')
+	image = models.ImageField(upload_to='product/', verbose_name='Изображение', **NULLABLE)
 	created_at = models.DateField(verbose_name='Дата создания')
 	updated_at = models.DateField(auto_now=True, verbose_name='Последнее изменение')
 	views_count = models.IntegerField(verbose_name='Просмотры', default=0)
@@ -37,8 +37,7 @@ class Product(models.Model):
 
 
 	def __str__(self):
-		return f'{self.name_product}{self.description_product}{self.name_category}{self.price}' \
-			   f'{self.created_at}{self.updated_at}'
+		return f'{self.name_product}'
 
 	class Meta:
 		verbose_name = 'Товар'
@@ -62,5 +61,36 @@ class Contacts(models.Model):
 		verbose_name = 'контакт'
 		verbose_name_plural = 'контакты'
 		ordering = ('contact_name',)
+
+
+class Versions(models.Model):
+	product = models.ForeignKey('Product', on_delete=models.CASCADE, verbose_name='продукт')
+	number_version = models.IntegerField(verbose_name='номер версии')
+	name = models.ForeignKey('StatusProduct', on_delete=models.CASCADE, verbose_name='наименование')
+	# name = models.CharField(max_length=50, verbose_name='наименование')
+	active_version = models.BooleanField(verbose_name='признак версии')
+
+	def __str__(self):
+		return f'{self.name}, {self.number_version}'
+
+	class Meta:
+		verbose_name = 'версия'
+		verbose_name_plural = 'версии'
+
+	@classmethod
+	def truncate_table_restart_id(cls):
+		with connection.cursor() as cursor:
+			cursor.execute(f'ALTER SEQUENCE catalog_version_id_seq RESTART WITH 1;')
+
+
+class StatusProduct(models.Model):
+	status_name = models.CharField(max_length=150, verbose_name='статус товара на складе')
+
+	def __str__(self):
+		return f'{self.status_name}'
+
+	class Meta:
+		verbose_name = 'статус'
+		verbose_name_plural = 'статусы'
 
 

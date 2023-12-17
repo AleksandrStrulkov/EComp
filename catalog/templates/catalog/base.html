@@ -20,6 +20,7 @@
         <a class="p-2 btn btn-outline-primary" href="{% url "blog:list" %}">Блог</a>
         <a class="p-2 btn btn-outline-primary" href="{% url "catalog:contacts" %}">Контакты</a>
     </nav>
+        {% include 'catalog/includes/inc_product.html' %}
 </div>
 {% block content %}
 {% endblock %}
