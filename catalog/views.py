@@ -15,6 +15,7 @@ class ProductListView(ListView):
 	extra_context = {
 			'title': "Все товары"
 	}
+	paginate_by = 3
 
 	def get_context_data(self, **kwargs):
 		context = super().get_context_data(**kwargs)
@@ -78,6 +79,7 @@ class CategoryListView(ListView):
 	extra_context = {
 			'title': "Категории товаров",
 	}
+	paginate_by = 3
 
 
 class CatalogListView(ListView):

@@ -46,7 +46,7 @@ class VersionForm(forms.ModelForm):
 		# exclude = ('product',)
 		fields = ('number_version', 'name', 'active_version')
 		widgets = {
-				'number_version': forms.NumberInput(attrs={'class': 'form-control'}),
+				'number_version': forms.Select(attrs={'class': 'form-control'}),
 				'name': forms.Select(attrs={'class': 'form-control'}),
 				'active_version': forms.NullBooleanSelect(attrs={'class': 'form-control'}),
 

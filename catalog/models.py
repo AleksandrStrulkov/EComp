@@ -65,9 +65,8 @@ class Contacts(models.Model):
 
 class Versions(models.Model):
 	product = models.ForeignKey('Product', on_delete=models.CASCADE, verbose_name='продукт')
-	number_version = models.IntegerField(verbose_name='номер версии')
+	number_version = models.ForeignKey('NumberVersion', on_delete=models.CASCADE, verbose_name='номер версии')
 	name = models.ForeignKey('StatusProduct', on_delete=models.CASCADE, verbose_name='наименование')
-	# name = models.CharField(max_length=50, verbose_name='наименование')
 	active_version = models.BooleanField(verbose_name='признак версии')
 
 	def __str__(self):
@@ -84,7 +83,7 @@ class Versions(models.Model):
 
 
 class StatusProduct(models.Model):
-	status_name = models.CharField(max_length=150, verbose_name='статус товара на складе')
+	status_name = models.CharField(max_length=150, verbose_name='статус товара на складе', unique=True)
 
 	def __str__(self):
 		return f'{self.status_name}'
@@ -94,3 +93,12 @@ class StatusProduct(models.Model):
 		verbose_name_plural = 'статусы'
 
 
+class NumberVersion(models.Model):
+	status_name = models.IntegerField(verbose_name='номер версии', unique=True)
+
+	def __str__(self):
+		return f'{self.status_name}'
+
+	class Meta:
+		verbose_name = 'номер версии'
+		verbose_name_plural = 'номера версии'
