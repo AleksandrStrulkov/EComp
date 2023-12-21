@@ -79,11 +79,17 @@ class Versions(models.Model):
 	@classmethod
 	def truncate_table_restart_id(cls):
 		with connection.cursor() as cursor:
-			cursor.execute(f'ALTER SEQUENCE catalog_version_id_seq RESTART WITH 1;')
+			cursor.execute(f'ALTER SEQUENCE catalog_versions_id_seq RESTART WITH 1;')
 
 
 class StatusProduct(models.Model):
 	status_name = models.CharField(max_length=150, verbose_name='статус товара на складе', unique=True)
+
+	@classmethod
+	def truncate_table_restart_id(cls):
+		with connection.cursor() as cursor:
+			cursor.execute(f'ALTER SEQUENCE catalog_statusproduct_id_seq RESTART WITH 1;')
+
 
 	def __str__(self):
 		return f'{self.status_name}'
@@ -95,6 +101,11 @@ class StatusProduct(models.Model):
 
 class NumberVersion(models.Model):
 	status_name = models.IntegerField(verbose_name='номер версии', unique=True)
+
+	@classmethod
+	def truncate_table_restart_id(cls):
+		with connection.cursor() as cursor:
+			cursor.execute(f'ALTER SEQUENCE catalog_numberversion_id_seq RESTART WITH 1;')
 
 	def __str__(self):
 		return f'{self.status_name}'

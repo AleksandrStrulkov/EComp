@@ -6,10 +6,12 @@
       "name_product": "Резистор RX27-1",
       "description_product": "Мощный постоянный резистор 0.75 Ом 5W 5% / SQP5",
       "name_category": 1,
-      "price": 9,
+      "price": "9.00",
       "image": "category/Резистор_RX27.jpg",
       "created_at": "2023-01-09",
-      "updated_at": "2023-12-02"
+      "updated_at": "2023-12-17",
+      "views_count": 6,
+      "slug": null
     }
   },
   {
@@ -19,10 +21,12 @@
       "name_product": "Полевой транзистор 20N06",
       "description_product": "20N06 N-канальный полевой транзистор для поверхностного монтажа в корпусе TO-252 (DPAK). Напряжение сток-исток 60 Вольт, максимальный ток стока 20 А. Сопротивление канала в открытом состоянии 38 мОм (при Vgs=10 В, Id =10 А).",
       "name_category": 2,
-      "price": 12,
+      "price": "12.00",
       "image": "category/Tранзистор_20N06_KUU.jpg",
       "created_at": "2023-01-09",
-      "updated_at": "2023-12-02"
+      "updated_at": "2023-12-17",
+      "views_count": 12,
+      "slug": null
     }
   },
   {
@@ -32,10 +36,12 @@
       "name_product": "Конденсатор RUICHI NPO",
       "description_product": "Керамический конденсатор RUICHI NPO, 22 пкФ, 50 В - это конденсатор, у которого диэлектриком служит керамика на основе главным образом титанатов циркония, кальция, никеля и бария. Ёмкость таких устройств от долей пикофарады до нескольких микрофарад. Рабочее напряжение от нескольких десятков вольт до десятков киловольт.",
       "name_category": 3,
-      "price": 2,
+      "price": "2.00",
       "image": "category/Конденсатор_RUICHI_NPO.jpg",
       "created_at": "2023-01-09",
-      "updated_at": "2023-12-02"
+      "updated_at": "2023-12-18",
+      "views_count": 7,
+      "slug": null
     }
   },
   {
@@ -45,10 +51,12 @@
       "name_product": "Диод (супрессор) 1.5KE51A MIC",
       "description_product": "1.5KE51A Однонаправленный TVS диод (супрессор) 43,6 Вольт выводной в корпусе DO-201 для сквозного монтажа. Максимальная импульсная мощность рассеивания 1500 Вт. Предназначен для защиты цепей от помех, вызванных грозовыми разрядами, переходными процессами и прочих.",
       "name_category": 4,
-      "price": 12,
+      "price": "12.00",
       "image": "category/Диод_1.5KE51A.jpg",
       "created_at": "2023-01-09",
-      "updated_at": "2023-12-02"
+      "updated_at": "2023-12-17",
+      "views_count": 9,
+      "slug": null
     }
   },
   {
@@ -58,10 +66,12 @@
       "name_product": "Реле промышленное RRP20-4-03-024D",
       "description_product": "24В 4пк 3А РЭК78/4 б/роз",
       "name_category": 5,
-      "price": 330,
+      "price": "330.00",
       "image": "category/Реле_RRP20.jpg",
       "created_at": "2023-01-09",
-      "updated_at": "2023-12-02"
+      "updated_at": "2023-12-17",
+      "views_count": 4,
+      "slug": null
     }
   },
   {
@@ -71,10 +81,117 @@
       "name_product": "Датчик газа WINSEN MP905",
       "description_product": "Датчик газа WINSEN MP905 предназначен для контроля качества воздуха. Он принимает многослойную технологию производства толстой пленки. Нагреватель и металлооксидный полупроводниковый материал на керамической подложке из сверхминиатюрного Al2O3 выведены электродным выводом, заключенным в металлическую втулку и крышку. На проводимость датчика влияет концентрация целевого газа. Чем выше концентрация, тем выше проводимость датчика.",
       "name_category": 6,
-      "price": 330,
+      "price": "330.00",
       "image": "category/Датчик_газа_WINSEN_MP905.jpg",
       "created_at": "2023-01-09",
-      "updated_at": "2023-12-02"
+      "updated_at": "2023-12-17",
+      "views_count": 6,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name_product": "Резистор переменный, 16K1-10C10K, L15KC, 10 кОм",
+      "description_product": "Резистор регулировочный однооборотный, 10 кОм.",
+      "name_category": 1,
+      "price": "81.00",
+      "image": "category/Резистор_переменный_большой.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 1,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name_product": "Транзистор FGA40N65SMD, IGBT, Field Stop, 650В, 40А [TO-3PN]",
+      "description_product": "Биполярный транзистор с изолированным затвором или IGBT представляет собой силовой полупроводниковый прибор с тремя выводами, отличающийся высокой эффективностью и быстрым переключением.",
+      "name_category": 2,
+      "price": "775.00",
+      "image": "category/Транзистор_FGA40N65SMD.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 15,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name_product": "Конденсатор керамический дисковый 6.0 пФ х 50В,NPO, 5%",
+      "description_product": "Являются заменой отечественных конденсаторов типа К10-7В, К10-19, КД-2.\r\nДисковые конденсаторы имеют керамический диэлектрик, обеспечивающий устойчивую линейную зависимость емкости от температуры и используются для настройки контуров и др.",
+      "name_category": 3,
+      "price": "9.00",
+      "image": "category/Kondensator_keramika.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 7,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name_product": "Диодная защита для 4-х линий данных, DALC208SC6, [SOT-23-6]",
+      "description_product": "ESD PROTECTION ARRAY, SOT-23-6; Clamping Voltage Vc Max:-; Diode Case Style:SOT-23; No. of Pins:6Pins; Operating Voltage:1.2V; Power Dissipation Pd:-; Product Range:DALC2 Series; Automotive Qualification Standard:-; SVHC:No SVHC (17-Dec-2015); Diode Type:Low Capacitance",
+      "name_category": 4,
+      "price": "30.00",
+      "image": "category/Diod_DALC208SC6.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 3,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name_product": "Реле тепловое РТЛ-3 63-80A RTL-3-80",
+      "description_product": "Приставки контактные мгновенного действия и с задержкой срабатывания, блокировочные устройства устанавливаются на электромагнитные контакторы серии Effica и Engard для обеспечения возможности адаптации контакторов в системах автоматического управления нагрузками.",
+      "name_category": 5,
+      "price": "1790.00",
+      "image": "category/Rele_Engard.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-18",
+      "views_count": 4,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "name_product": "Фотодиод с усилителем, OPT101P, [DIP-8]",
+      "description_product": "Light Sensor Power supply: +2.7...+36 V Optical sensor range: 650 nm Series: OPT101 Package: DIL-8 Static current: 120 uA",
+      "name_category": 6,
+      "price": "3100.00",
+      "image": "category/Fotodiod.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 1,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 32,
+    "fields": {
+      "name_product": "Датчик",
+      "description_product": "Замеры углеводородов и их паров",
+      "name_category": 6,
+      "price": "120.00",
+      "image": "product/Fotodiod.jpg",
+      "created_at": "2023-12-19",
+      "updated_at": "2023-12-19",
+      "views_count": 1,
+      "slug": null
     }
   }
 ]
