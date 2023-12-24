@@ -1,14 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.views import LoginView as BaseLoginView
 from django.contrib.auth.views import LogoutView as BaseLogoutView
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 from django.views.generic.base import TemplateView
 
 from catalog.forms import StyleFormMixin
 from users.models import User
 from django.urls import reverse_lazy
 
-from users.forms import UserForm, RegisterForm
+from users.forms import RegisterForm, UserProfileForm
 
 from django.core.signing import BadSignature
 from .utilities import signer
@@ -55,5 +55,14 @@ def user_activate(request, sign):
 		user.save()
 
 	return render(request, template)
+
+
+class UserUpdateView(UpdateView):
+	models = User
+	success_url = reverse_lazy('users:profile')
+	form_class = UserProfileForm
+
+	def get_object(self, queryset=None): # Избавляемся от входящего параметра pk
+		return self.request.user
 
 

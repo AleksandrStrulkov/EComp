@@ -1,4 +1,4 @@
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.contrib.auth import password_validation
 from django.core.exceptions import ValidationError
 from django import forms
@@ -7,14 +7,29 @@ from users.models import User
 from users.signals import post_register
 
 
-class UserForm(StyleFormMixin, UserCreationForm):
+# class UserForm(StyleFormMixin, UserCreationForm):
+#
+# 	class Meta:
+# 		model = User
+# 		fields = ('email', 'password1', 'password2')
+# 		title = 'Авторизация'
+
+
+
+"""Добавление формы профиля пользователя"""
+class UserProfileForm(StyleFormMixin, UserChangeForm):
 
 	class Meta:
 		model = User
-		fields = ('email', 'password1', 'password2')
-		title = 'Авторизация'
+		fields = ('email', 'password', 'first_name', 'last_name', 'phone', 'avatar', 'country')
+
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+
+		self.fields['password'].widget = forms.HiddenInput()
 
 
+"""Добавление формы регистрации пользователя"""
 class RegisterForm(StyleFormMixin, forms.ModelForm):
 	email = forms.EmailField(required=True, label='Адрес электронной почты')
 	password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput,
