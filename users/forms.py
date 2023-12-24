@@ -1,24 +1,12 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
-from django.contrib.auth import password_validation
-from django.core.exceptions import ValidationError
 from django import forms
 from catalog.forms import StyleFormMixin
 from users.models import User
 from users.signals import post_register
 
 
-# class UserForm(StyleFormMixin, UserCreationForm):
-#
-# 	class Meta:
-# 		model = User
-# 		fields = ('email', 'password1', 'password2')
-# 		title = 'Авторизация'
-
-
-
-"""Добавление формы профиля пользователя"""
 class UserProfileForm(StyleFormMixin, UserChangeForm):
-
+	"""Добавление формы профиля пользователя"""
 	class Meta:
 		model = User
 		fields = ('email', 'password', 'first_name', 'last_name', 'phone', 'avatar', 'country')
@@ -29,29 +17,8 @@ class UserProfileForm(StyleFormMixin, UserChangeForm):
 		self.fields['password'].widget = forms.HiddenInput()
 
 
-"""Добавление формы регистрации пользователя"""
-class RegisterForm(StyleFormMixin, forms.ModelForm):
-	email = forms.EmailField(required=True, label='Адрес электронной почты')
-	password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput,
-								help_text=password_validation.password_validators_help_text_html())
-	password2 = forms.CharField(label='Пароль(повторно)',
-							   widget=forms.PasswordInput,
-							   help_text='Введите тот же самый пароль еще раз для проверки')
-
-	def clean_password1(self):
-		password1 = self.cleaned_data['password1']
-		if password1:
-			password_validation.validate_password(password1)
-		return password1
-
-	def clean(self):
-		super().clean()
-		password1 = self.cleaned_data['password1']
-		password2 = self.cleaned_data['password2']
-		if password1 and password2 and password1 != password2:
-			errors = {'password2': ValidationError(
-					'Введенные пароли не совпадают', code='password_mismatch')}
-			raise ValidationError(errors)
+class RegisterForm(StyleFormMixin, UserCreationForm):
+	"""Добавление формы регистрации пользователя с верификацией"""
 
 	def save(self, commit=True):
 		user = super().save(commit=False)

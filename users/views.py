@@ -1,23 +1,22 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.views import LoginView as BaseLoginView
 from django.contrib.auth.views import LogoutView as BaseLogoutView
 from django.views.generic import CreateView, UpdateView
 from django.views.generic.base import TemplateView
 
-from catalog.forms import StyleFormMixin
 from users.models import User
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 
 from users.forms import RegisterForm, UserProfileForm
 
 from django.core.signing import BadSignature
 from .utilities import signer
-from django.views.decorators.csrf import csrf_exempt
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 class LoginView(BaseLoginView):
 	template_name = 'users/login.html'
-
 
 
 class LogoutView(BaseLogoutView):
@@ -37,7 +36,6 @@ class RegisterDoneView(TemplateView):
 	template_name = 'users/register_done.html'
 
 
-# @csrf_exempt
 def user_activate(request, sign):
 	try:
 		email = signer.unsign(sign)
@@ -66,3 +64,15 @@ class UserUpdateView(UpdateView):
 		return self.request.user
 
 
+def generate_new_password(request):
+	new_password = User.objects.make_random_password()
+	send_mail(
+			subject='Вы сменили пароль',
+			message=f'Ваш новый пароль: {new_password}',
+			from_email=settings.EMAIL_HOST_USER,
+			recipient_list=[request.user.email]
+	)
+
+	request.user.set_password(new_password)
+	request.user.save()
+	return redirect(reverse('catalog:home'))
