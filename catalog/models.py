@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.db import connection
 
@@ -34,6 +35,7 @@ class Product(models.Model):
 	updated_at = models.DateField(auto_now=True, verbose_name='Последнее изменение')
 	views_count = models.IntegerField(verbose_name='Просмотры', default=0)
 	slug = models.SlugField(verbose_name='slug', max_length=150, null=True, blank=True)
+	creator = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, **NULLABLE)
 
 
 	def __str__(self):
