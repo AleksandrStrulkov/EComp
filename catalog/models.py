@@ -36,6 +36,7 @@ class Product(models.Model):
 	views_count = models.IntegerField(verbose_name='Просмотры', default=0)
 	slug = models.SlugField(verbose_name='slug', max_length=150, null=True, blank=True)
 	creator = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, **NULLABLE)
+	is_published = models.BooleanField(default=False, verbose_name='опубликовано')
 
 
 	def __str__(self):

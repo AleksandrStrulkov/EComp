@@ -7,7 +7,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from django.urls import reverse_lazy, reverse
 from catalog.models import Product, Category, Contacts, Versions
-from catalog.forms import ProductForm, VersionForm, ContactForm, VersionBaseInlineFormSet
+from catalog.forms import ProductForm, VersionForm, ContactForm, VersionBaseInlineFormSet, \
+	ProductModeratorForm
 from django.db import transaction
 
 from django.contrib.auth.decorators import login_required
@@ -122,6 +123,9 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
 		return context_data
 
 	def form_valid(self, form):
+		self.object = form.save()
+		self.object.user = self.request.user
+		self.object.save()
 		product = form.save(commit=False)
 		product.creator = self.request.user
 		context_data = self.get_context_data()
@@ -138,9 +142,10 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
 		return super().form_valid(form)
 
 
-class ProductUpdateView(LoginRequiredMixin, UpdateView):
+class ProductUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 	model = Product
 	form_class = ProductForm
+	permission_required = 'catalog.change_product'
 
 	def get_success_url(self):
 		return reverse('catalog:product_update', args=[self.kwargs.get('pk')])
@@ -174,6 +179,25 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
 					return self.form_invalid(form)
 
 		return super().form_valid(form)
+
+	def get_form_class(self):
+		if self.request.user.is_staff and self.request.user.groups.filter(name='moderator').exists():
+			return ProductModeratorForm
+		return ProductForm
+
+	def test_func(self):
+		_user = self.request.user
+		_instance: Product = self.get_object()
+		custom_perms: tuple = (
+				'catalog_app.set_is_published',
+				'catalog_app.set_name_category',
+				'catalog_app.set_description_product',
+		)
+		if _user == _instance.creator:
+			return True
+		elif _user.groups.filter(name='moderator') and _user.has_perms(custom_perms):
+			return True
+		return self.handle_no_permission()
 
 
 class ProductDeleteView(LoginRequiredMixin, DeleteView):

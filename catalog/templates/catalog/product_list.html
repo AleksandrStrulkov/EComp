@@ -41,12 +41,14 @@
                                     <p>Статус: {{ object.active_version_name }}</p>
                                 {% endif %}
                             </h6>
-                            <div class="card-footer">
+{#                        {% if perms.catalog.change_product %}#}
+                        <div class="card-footer">
                                 <a class="btn btn-link"
                                    href="{% url 'catalog:product_update' object.pk %}">Редактировать</a>
                                 <a class="btn btn-link" href="{% url 'catalog:product_delete' object.pk %}">Удалить</a>
                                 <small class="text-muted"></small>
                             </div>
+{#                        {% endif %}#}
                         </div>
                     </div>
                 </div>

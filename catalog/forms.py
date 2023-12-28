@@ -67,3 +67,9 @@ class VersionBaseInlineFormSet(BaseInlineFormSet):
 		if active_list.count(True) > 1:
 			print("У продукта возможна только одна активная версия!")
 			raise forms.ValidationError("У продукта возможна только одна активная версия!")
+
+
+class ProductModeratorForm(StyleFormMixin, forms.ModelForm):
+	class Meta:
+		model = Product
+		fields = ('is_published', 'description_product', 'name_category',)

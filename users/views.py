@@ -1,3 +1,5 @@
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.views import LoginView as BaseLoginView
 from django.contrib.auth.views import LogoutView as BaseLogoutView
@@ -17,6 +19,7 @@ from django.conf import settings
 
 class LoginView(BaseLoginView):
 	template_name = 'users/login.html'
+
 
 
 class LogoutView(BaseLogoutView):
@@ -55,7 +58,7 @@ def user_activate(request, sign):
 	return render(request, template)
 
 
-class UserUpdateView(UpdateView):
+class UserUpdateView(LoginRequiredMixin, UpdateView):
 	models = User
 	success_url = reverse_lazy('users:profile')
 	form_class = UserProfileForm
@@ -64,6 +67,7 @@ class UserUpdateView(UpdateView):
 		return self.request.user
 
 
+@login_required
 def generate_new_password(request):
 	new_password = User.objects.make_random_password()
 	send_mail(
