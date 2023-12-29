@@ -1,15 +1,23 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django import forms
-from catalog.forms import StyleFormMixin
+# from catalog.forms import StyleFormMixin
 from users.models import User
 from users.signals import post_register
+
+
+class StyleFormMixin:
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+		for field_name, field in self.fields.items():
+			if field_name != 'is_staff':
+				field.widget.attrs['class'] = 'form-control'
 
 
 class UserProfileForm(StyleFormMixin, UserChangeForm):
 	"""Добавление формы профиля пользователя"""
 	class Meta:
 		model = User
-		fields = ('email', 'password', 'first_name', 'last_name', 'phone', 'avatar', 'country')
+		fields = ('email', 'password', 'first_name', 'last_name', 'phone', 'avatar', 'country', 'is_staff')
 
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
@@ -32,4 +40,5 @@ class RegisterForm(StyleFormMixin, UserCreationForm):
 
 	class Meta:
 		model = User
-		fields = ('first_name', 'email', 'password1', 'password2', 'avatar', 'phone', 'country',)
+		fields = ('first_name', 'email', 'password1', 'password2', 'avatar', 'phone', 'country', 'is_staff')
+

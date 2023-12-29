@@ -69,7 +69,14 @@ class VersionBaseInlineFormSet(BaseInlineFormSet):
 			raise forms.ValidationError("У продукта возможна только одна активная версия!")
 
 
-class ProductModeratorForm(StyleFormMixin, forms.ModelForm):
+class ProductModeratorForm(forms.ModelForm):
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+		for field_name, field in self.fields.items():
+			if field_name != 'is_published':
+				field.widget.attrs['class'] = 'form-control'
+
 	class Meta:
 		model = Product
 		fields = ('is_published', 'description_product', 'name_category',)
+
