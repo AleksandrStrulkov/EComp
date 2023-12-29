@@ -1,4 +1,5 @@
 import json
+
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin, \
 	PermissionRequiredMixin
 from django import forms
@@ -13,6 +14,8 @@ from django.db import transaction
 
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+
+from catalog.services import cached_category
 
 
 class ProductListView(LoginRequiredMixin, ListView):
@@ -70,6 +73,7 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
 			formset = VersionFormSet()
 
 		context_data['formset'] = formset
+		context_data['name_category'] = cached_category()
 		return context_data
 
 	def form_valid(self, form):
@@ -164,6 +168,10 @@ class CategoryListView(ListView):
 			'title': "Категории товаров",
 	}
 	paginate_by = 3
+
+	# def get_queryset(self):
+	# 	сach_category = cached_category()
+	# 	return сach_category
 
 
 class CatalogListView(LoginRequiredMixin, ListView):
