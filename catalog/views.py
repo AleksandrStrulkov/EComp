@@ -36,30 +36,6 @@ class ProductListView(LoginRequiredMixin, ListView):
 		return context
 
 
-class ContactsCreateView(CreateView):
-	model = Contacts
-	form_class = ContactForm
-	success_url = reverse_lazy('catalog:contacts')
-	extra_context = {
-			'title': "Обратная связь"
-	}
-
-	def form_valid(self, form):
-		if form.is_valid():
-			new_contact = form.save()
-			new_contact.personal_manager = self.request.user
-			new_contact.save()
-			contact_dict = {
-					"Имя": new_contact.contact_name,
-					"Почта": new_contact.contact_email,
-					"Сообщение": new_contact.contact_text,
-			}
-			with open("contacts.json", 'a', encoding='UTF-8') as f:
-				json.dump(contact_dict, f, indent=2, ensure_ascii=False)
-
-		return super().form_valid(form)
-
-
 class ProductDetailView(LoginRequiredMixin, DetailView):
 	model = Product
 
@@ -74,32 +50,6 @@ class ProductDetailView(LoginRequiredMixin, DetailView):
 
 		product_item = Product.objects.get(pk=self.kwargs.get('pk'))
 		context_data['title'] = f'{product_item.name_product}'
-
-		return context_data
-
-
-class CategoryListView(ListView):
-	model = Category
-	extra_context = {
-			'title': "Категории товаров",
-	}
-	paginate_by = 3
-
-
-class CatalogListView(LoginRequiredMixin, ListView):
-	model = Product
-
-	def get_queryset(self):
-		queryset = super().get_queryset()
-		queryset = queryset.filter(name_category_id=self.kwargs.get('pk'))
-		return queryset
-
-	def get_context_data(self, *args, **kwargs):
-		context_data = super().get_context_data(*args, **kwargs)
-
-		category_item = Category.objects.get(pk=self.kwargs.get('pk'))
-		context_data['category_pk'] = category_item.pk
-		context_data['title'] = f'{category_item.name_category}'
 
 		return context_data
 
@@ -206,3 +156,53 @@ class ProductDeleteView(LoginRequiredMixin, DeleteView):
 	extra_context = {
 			'title': "Удаление товара",
 	}
+
+
+class CategoryListView(ListView):
+	model = Category
+	extra_context = {
+			'title': "Категории товаров",
+	}
+	paginate_by = 3
+
+
+class CatalogListView(LoginRequiredMixin, ListView):
+	model = Product
+
+	def get_queryset(self):
+		queryset = super().get_queryset()
+		queryset = queryset.filter(name_category_id=self.kwargs.get('pk'))
+		return queryset
+
+	def get_context_data(self, *args, **kwargs):
+		context_data = super().get_context_data(*args, **kwargs)
+
+		category_item = Category.objects.get(pk=self.kwargs.get('pk'))
+		context_data['category_pk'] = category_item.pk
+		context_data['title'] = f'{category_item.name_category}'
+
+		return context_data
+
+
+class ContactsCreateView(CreateView):
+	model = Contacts
+	form_class = ContactForm
+	success_url = reverse_lazy('catalog:contacts')
+	extra_context = {
+			'title': "Обратная связь"
+	}
+
+	def form_valid(self, form):
+		if form.is_valid():
+			new_contact = form.save()
+			new_contact.personal_manager = self.request.user
+			new_contact.save()
+			contact_dict = {
+					"Имя": new_contact.contact_name,
+					"Почта": new_contact.contact_email,
+					"Сообщение": new_contact.contact_text,
+			}
+			with open("contacts.json", 'a', encoding='UTF-8') as f:
+				json.dump(contact_dict, f, indent=2, ensure_ascii=False)
+
+		return super().form_valid(form)
