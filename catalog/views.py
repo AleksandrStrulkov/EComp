@@ -1,20 +1,26 @@
 import json
-
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin, \
+	PermissionRequiredMixin
 from django import forms
 from django.forms import inlineformset_factory
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from django.urls import reverse_lazy, reverse
 from catalog.models import Product, Category, Contacts, Versions
-from catalog.forms import ProductForm, VersionForm, ContactForm, VersionBaseInlineFormSet
+from catalog.forms import ProductForm, VersionForm, ContactForm, VersionBaseInlineFormSet, \
+	ProductModeratorForm
 from django.db import transaction
 
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
-class ProductListView(ListView):
+
+class ProductListView(LoginRequiredMixin, ListView):
 	model = Product
 	extra_context = {
 			'title': "Все товары"
 	}
+	paginate_by = 3
 
 	def get_context_data(self, **kwargs):
 		context = super().get_context_data(**kwargs)
@@ -33,7 +39,6 @@ class ProductListView(ListView):
 class ContactsCreateView(CreateView):
 	model = Contacts
 	form_class = ContactForm
-	# fields = ('contact_name', 'contact_email', 'contact_text')
 	success_url = reverse_lazy('catalog:contacts')
 	extra_context = {
 			'title': "Обратная связь"
@@ -55,7 +60,7 @@ class ContactsCreateView(CreateView):
 		return super().form_valid(form)
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(LoginRequiredMixin, DetailView):
 	model = Product
 
 	def get_object(self, queryset=None):
@@ -78,9 +83,10 @@ class CategoryListView(ListView):
 	extra_context = {
 			'title': "Категории товаров",
 	}
+	paginate_by = 3
 
 
-class CatalogListView(ListView):
+class CatalogListView(LoginRequiredMixin, ListView):
 	model = Product
 
 	def get_queryset(self):
@@ -98,7 +104,7 @@ class CatalogListView(ListView):
 		return context_data
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(LoginRequiredMixin, CreateView):
 	model = Product
 	form_class = ProductForm
 	success_url = reverse_lazy('catalog:home')
@@ -117,6 +123,11 @@ class ProductCreateView(CreateView):
 		return context_data
 
 	def form_valid(self, form):
+		self.object = form.save()
+		self.object.user = self.request.user
+		self.object.save()
+		product = form.save(commit=False)
+		product.creator = self.request.user
 		context_data = self.get_context_data()
 		formset = context_data['formset']
 		# with transaction.atomic():
@@ -131,9 +142,10 @@ class ProductCreateView(CreateView):
 		return super().form_valid(form)
 
 
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 	model = Product
 	form_class = ProductForm
+	permission_required = 'catalog.change_product'
 
 	def get_success_url(self):
 		return reverse('catalog:product_update', args=[self.kwargs.get('pk')])
@@ -143,9 +155,9 @@ class ProductUpdateView(UpdateView):
 		context_data['category'] = Category.objects.all()
 		context_data['title'] = 'Редактирование товара'
 		VersionFormSet = inlineformset_factory(
-			Product, Versions, form=VersionForm, extra=1,
-			formset=VersionBaseInlineFormSet
-			)
+				Product, Versions, form=VersionForm, extra=1,
+				formset=VersionBaseInlineFormSet
+		)
 		if self.request.method == 'POST':
 			formset = VersionFormSet(self.request.POST, instance=self.object)
 		else:
@@ -168,8 +180,27 @@ class ProductUpdateView(UpdateView):
 
 		return super().form_valid(form)
 
+	def get_form_class(self):
+		if self.request.user.is_staff and self.request.user.groups.filter(name='moderator').exists():
+			return ProductModeratorForm
+		return ProductForm
 
-class ProductDeleteView(DeleteView):
+	def test_func(self):
+		_user = self.request.user
+		_instance: Product = self.get_object()
+		custom_perms: tuple = (
+				'catalog_app.set_is_published',
+				'catalog_app.set_name_category',
+				'catalog_app.set_description_product',
+		)
+		if _user == _instance.creator:
+			return True
+		elif _user.groups.filter(name='moderator') and _user.has_perms(custom_perms):
+			return True
+		return self.handle_no_permission()
+
+
+class ProductDeleteView(LoginRequiredMixin, DeleteView):
 	model = Product
 	success_url = reverse_lazy('catalog:home')
 	extra_context = {

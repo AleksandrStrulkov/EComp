@@ -19,11 +19,23 @@
         <a class="p-2 btn btn-outline-primary" href="{% url "catalog:category" %}">Каталог</a>
         <a class="p-2 btn btn-outline-primary" href="{% url "blog:list" %}">Блог</a>
         <a class="p-2 btn btn-outline-primary" href="{% url "catalog:contacts" %}">Контакты</a>
+        {% if user.is_authenticated %}
+            <a class="p-2 btn btn-outline-primary" href="{% url "users:profile" %}">Профиль</a>
+            <a class="p-2 btn btn-outline-primary" href="{% url "users:logout" %}">Выход</a>
+        {% else %}
+            <a class="p-2 btn btn-outline-primary mb-2" href="{% url "users:login" %}">Вход</a>
+            <a class="p-2 btn btn-outline-primary" href="{% url "users:register" %}">Регистрация</a>
+        {% endif %}
     </nav>
         {% include 'catalog/includes/inc_product.html' %}
 </div>
+{#<!-- Блок навигации -->#}
+{#{% block navigation %}#}
+{#{% endblock %}#}
+<!-- Блок контента -->
 {% block content %}
 {% endblock %}
+
 <div class='container'>
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">

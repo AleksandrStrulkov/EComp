@@ -1,0 +1,3211 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-12-02T18:22:04.336Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Датчики",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-12-02T18:22:04.339Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Реле",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-12-02T18:22:04.339Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Диоды",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-12-02T18:22:04.340Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Конденсаторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-12-02T18:22:04.340Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Транзисторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-12-02T18:22:04.341Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Резисторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-12-02T18:25:05.293Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Датчики",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-12-02T18:25:05.295Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Реле",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-12-02T18:25:05.295Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Диоды",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-12-02T18:25:05.296Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Конденсаторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-12-02T18:25:05.296Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Транзисторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2023-12-02T18:25:05.297Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Резисторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2023-12-02T18:26:38.573Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Датчики",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2023-12-02T18:26:38.574Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Реле",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2023-12-02T18:26:38.576Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Диоды",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2023-12-02T18:26:38.576Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Конденсаторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2023-12-02T18:26:38.577Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Транзисторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2023-12-02T18:26:38.577Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Резисторы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2023-12-02T20:25:55.564Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Резистор RX27-1Мощный постоянный резистор 0.75 Ом 5W 5% / SQP5Резисторы92023-01-092023-12-02",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2023-12-02T20:26:01.071Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Полевой транзистор 20N0620N06 N-канальный полевой транзистор для поверхностного монтажа в корпусе TO-252 (DPAK). Напряжение сток-исток 60 Вольт, максимальный ток стока 20 А. Сопротивление канала в отк",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2023-12-02T20:26:06.358Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Конденсатор RUICHI NPOКерамический конденсатор RUICHI NPO, 22 пкФ, 50 В - это конденсатор, у которого диэлектриком служит керамика на основе главным образом титанатов циркония, кальция, никеля и бария",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2023-12-02T20:26:10.957Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Диод (супрессор) 1.5KE51A MIC1.5KE51A Однонаправленный TVS диод (супрессор) 43,6 Вольт выводной в корпусе DO-201 для сквозного монтажа. Максимальная импульсная мощность рассеивания 1500 Вт. Предназнач",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2023-12-02T20:26:16.919Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Диод (супрессор) 1.5KE51A MIC1.5KE51A Однонаправленный TVS диод (супрессор) 43,6 Вольт выводной в корпусе DO-201 для сквозного монтажа. Максимальная импульсная мощность рассеивания 1500 Вт. Предназнач",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2023-12-02T20:26:22.475Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Реле промышленное RRP20-4-03-024D24В 4пк 3А РЭК78/4 б/розРеле3302023-01-092023-12-02",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2023-12-02T20:26:27.341Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Датчик газа WINSEN MP905Датчик газа WINSEN MP905 предназначен для контроля качества воздуха. Он принимает многослойную технологию производства толстой пленки. Нагреватель и металлооксидный полупроводн",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2023-12-02T20:26:43.664Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Резистор RX27-1Мощный постоянный резистор 0.75 Ом 5W 5% / SQP5Резисторы92023-01-092023-12-02",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2023-12-02T20:26:57.541Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Резистор RX27-1Мощный постоянный резистор 0.75 Ом 5W 5% / SQP5Резисторы92023-01-092023-12-02",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2023-12-02T20:27:10.906Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Полевой транзистор 20N0620N06 N-канальный полевой транзистор для поверхностного монтажа в корпусе TO-252 (DPAK). Напряжение сток-исток 60 Вольт, максимальный ток стока 20 А. Сопротивление канала в отк",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2023-12-02T20:27:22.188Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Конденсатор RUICHI NPOКерамический конденсатор RUICHI NPO, 22 пкФ, 50 В - это конденсатор, у которого диэлектриком служит керамика на основе главным образом титанатов циркония, кальция, никеля и бария",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2023-12-02T20:27:36.063Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Диод (супрессор) 1.5KE51A MIC1.5KE51A Однонаправленный TVS диод (супрессор) 43,6 Вольт выводной в корпусе DO-201 для сквозного монтажа. Максимальная импульсная мощность рассеивания 1500 Вт. Предназнач",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2023-12-02T20:27:47.251Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Реле промышленное RRP20-4-03-024D24В 4пк 3А РЭК78/4 б/розРеле3302023-01-092023-12-02",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2023-12-02T20:27:58.446Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Датчик газа WINSEN MP905Датчик газа WINSEN MP905 предназначен для контроля качества воздуха. Он принимает многослойную технологию производства толстой пленки. Нагреватель и металлооксидный полупроводн",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2023-12-02T22:22:10.261Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Резисторы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2023-12-02T22:28:18.083Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Транзисторы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2023-12-02T22:28:29.240Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Конденсаторы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2023-12-02T22:28:41.658Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Диоды",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2023-12-02T22:28:51.991Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Реле",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2023-12-02T22:29:05.681Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Датчики",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2023-12-02T23:08:13.409Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Резисторы",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2023-12-02T23:17:08.352Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Резистор переменный, 16K1-10C10K, L15KC, 10 кОмРезисторы регулировочные однооборотные. В ассортименте представлены как резисторы с круговым перемещением подвижной системы, так и с движковым. Предназна",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2023-12-02T23:37:48.819Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Резистор переменный, 16K1-10C10K, L15KC, 10 кОмРезистор регулировочный однооборотный.  Предназначен для работы в электрических цепях постоянного, переменного и импульсного тока.Резисторы812023-12-0220",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2023-12-02T23:38:46.432Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Резистор переменный, 16K1-10C10K, L15KC, 10 кОмРезистор регулировочный однооборотный, 10 кОм.Резисторы812023-12-022023-12-03",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2023-12-02T23:43:25.198Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Транзистор FGA40N65SMD, IGBT, Field Stop, 650В, 40А [TO-3PN]Биполярный транзистор с изолированным затвором или IGBT представляет собой силовой полупроводниковый прибор с тремя выводами, отличающийся в",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2023-12-02T23:47:40.665Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Конденсатор керамический дисковый 6.0 пФ х 50В,NPO, 5%Являются заменой отечественных конденсаторов типа К10-7В, К10-19, КД-2.\r\nДисковые конденсаторы имеют керамический диэлектрик, обеспечивающий устой",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2023-12-02T23:51:33.371Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Диодная защита для 4-х линий данных, DALC208SC6, [SOT-23-6]ESD PROTECTION ARRAY, SOT-23-6; Clamping Voltage Vc Max:-; Diode Case Style:SOT-23; No. of Pins:6Pins; Operating Voltage:1.2V; Power Dissipat",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2023-12-02T23:54:00.236Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Реле тепловое РТЛ-3 63-80A RTL-3-80Приставки контактные мгновенного действия и с задержкой срабатывания, блокировочные устройства устанавливаются на электромагнитные контакторы серии Effica и Engard д",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2023-12-02T23:56:21.961Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "Фотодиод с усилителем, OPT101P, [DIP-8]Light Sensor Power supply: +2.7...+36 V Optical sensor range: 650 nm Series: OPT101 Package: DIL-8 Static current: 120 uAДатчики31002023-12-022023-12-03",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2023-12-10T15:29:20.808Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Транзистор FGA40N65SMD, IGBT, Field Stop, 650В, 40А [TO-3PN]Биполярный транзистор с изолированным затвором или IGBT представляет собой силовой полупроводниковый прибор с тремя выводами, отличающийся в",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2023-12-10T15:32:03.360Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Транзистор FGA40N65SMD, IGBT, Field Stop, 650В, 40А [TO-3PN]Биполярный транзистор с изолированным затвором или IGBT представляет собой силовой полупроводниковый прибор с тремя выводами, отличающийся в",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2023-12-10T15:33:20.097Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Полевой транзистор 20N0620N06 N-канальный полевой транзистор для поверхностного монтажа в корпусе TO-252 (DPAK). Напряжение сток-исток 60 Вольт, максимальный ток стока 20 А. Сопротивление канала в отк",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2023-12-10T15:37:20.080Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Транзистор FGA40N65SMD, IGBT, Field Stop, 650В, 40А [TO-3PN]Биполярный транзистор с изолированным затвором или IGBT представляет собой силовой полупроводниковый прибор с тремя выводами, отличающийся в",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2023-12-10T20:29:38.519Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Тест1 - test1",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2023-12-10T20:30:22.223Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "тест1 - test1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2023-12-10T20:30:22.224Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "Тест3 - test3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2023-12-10T20:30:22.225Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "Тест2 - test2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2023-12-10T20:30:22.225Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Тест1 - test1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2023-12-10T20:30:22.226Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Тест 2 - test-2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2023-12-10T20:30:22.226Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Тест1 - test1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2023-12-10T20:34:05.696Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "13",
+      "object_repr": "Микросхема - None",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2023-12-10T20:34:13.919Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "13",
+      "object_repr": "Микросхема - None",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2023-12-10T20:35:02.118Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "13",
+      "object_repr": "Микросхема - micro",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2023-12-16T09:24:51.795Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "РезисторМощный резисторРезисторы122023-12-162023-12-16",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2023-12-16T09:24:51.798Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "РезисторМощный резисторРезисторы122023-12-162023-12-16",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2023-12-16T09:27:11.952Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "транзисторЧерный, три ноги, эммитер - коллектор - базаТранзисторы2502023-12-162023-12-16",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2023-12-16T12:03:07.656Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2023-12-16T12:03:35.833Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2023-12-16T12:04:12.669Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "На складе, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2023-12-16T12:06:41.281Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2023-12-16T12:07:01.432Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2023-12-16T12:07:27.245Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "На складе, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2023-12-16T12:10:50.008Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "7",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2023-12-16T12:11:08.938Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2023-12-16T12:11:23.671Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "9",
+      "object_repr": "На складе, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2023-12-16T12:11:56.968Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "10",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2023-12-16T12:12:10.564Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "11",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2023-12-16T12:12:25.701Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "12",
+      "object_repr": "На складе, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2023-12-16T19:04:22.263Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "На складе",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2023-12-16T19:04:35.669Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "Доставка на склад",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2023-12-16T19:04:49.788Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "3",
+      "object_repr": "Нет в наличии у поставщика",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.018Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "31",
+      "object_repr": "Доставка на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.019Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "30",
+      "object_repr": "Доставка на склад, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.020Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "29",
+      "object_repr": "Доставлено, 4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.020Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "28",
+      "object_repr": "Доставка на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.021Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "27",
+      "object_repr": "На складе, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.021Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "26",
+      "object_repr": "На складе, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.021Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "25",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.022Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "21",
+      "object_repr": "На складе, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.022Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "13",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.022Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "12",
+      "object_repr": "На складе, 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.023Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "11",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.023Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "10",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.023Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "9",
+      "object_repr": "На складе, 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.024Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.024Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "7",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.024Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "На складе, 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.025Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.025Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.025Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "На складе, 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.026Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "В доставке на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2023-12-16T19:32:50.027Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2023-12-16T19:36:07.413Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "32",
+      "object_repr": "На складе, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2023-12-16T19:36:24.018Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "33",
+      "object_repr": "Доставка на склад, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2023-12-16T19:36:50.694Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "34",
+      "object_repr": "Нет в наличии у поставщика, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2023-12-16T19:37:08.186Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "35",
+      "object_repr": "На складе, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2023-12-16T19:37:16.975Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "36",
+      "object_repr": "Доставка на склад, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2023-12-16T19:37:38.962Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "37",
+      "object_repr": "Нет в наличии у поставщика, 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2023-12-16T19:38:02.968Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "38",
+      "object_repr": "Нет в наличии у поставщика, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2023-12-16T19:38:32.600Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "39",
+      "object_repr": "Доставка на склад, 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2023-12-16T19:39:23.822Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "40",
+      "object_repr": "Доставка на склад, 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2023-12-16T19:39:37.928Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "41",
+      "object_repr": "Нет в наличии у поставщика, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2023-12-16T19:39:54.307Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "42",
+      "object_repr": "Нет в наличии у поставщика, 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2023-12-16T20:41:27.480Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Кабель",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.435Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "60",
+      "object_repr": "Доставка на склад, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.436Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "59",
+      "object_repr": "Доставка на склад, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.437Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "57",
+      "object_repr": "На складе, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.437Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "56",
+      "object_repr": "На складе, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.437Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "55",
+      "object_repr": "На складе, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.438Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "54",
+      "object_repr": "Доставка на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.438Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "53",
+      "object_repr": "На складе, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.439Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "52",
+      "object_repr": "Доставка на склад, 2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.439Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "51",
+      "object_repr": "На складе, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.439Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "43",
+      "object_repr": "На складе, 1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+      "action_time": "2023-12-17T01:01:29.440Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "42",
+      "object_repr": "Нет в наличии у поставщика, 3",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.078Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "Датчик",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.079Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "Датчик",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.080Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "26",
+      "object_repr": "Датчик",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.080Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "25",
+      "object_repr": "Резистор",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.081Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "Резистор",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.081Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "Кабель МППВХ-23-56",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.081Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "22",
+      "object_repr": "Датчик",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.082Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "21",
+      "object_repr": "Датчик",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.082Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "Резистор",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+      "action_time": "2023-12-17T01:02:46.082Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "транзистор",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+      "action_time": "2023-12-17T01:11:00.911Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Измерительные приборы",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+      "action_time": "2023-12-17T19:43:38.360Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+      "action_time": "2023-12-17T19:43:44.723Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+      "action_time": "2023-12-17T19:43:51.800Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+      "action_time": "2023-12-17T21:40:29.068Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Измерительные приборы",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+      "action_time": "2023-12-17T21:40:29.074Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Кабель",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+      "action_time": "2023-12-19T19:27:05.043Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "15",
+      "object_repr": "Тест5 - test5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+      "action_time": "2023-12-19T19:27:05.049Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "14",
+      "object_repr": "Работа - rabota",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+      "action_time": "2023-12-19T19:27:05.050Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "13",
+      "object_repr": "Микросхема - micro",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+      "action_time": "2023-12-19T19:27:05.050Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "12",
+      "object_repr": "С картинокой - s-kartinokoj",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+      "action_time": "2023-12-19T19:27:05.051Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "11",
+      "object_repr": "Проба - proba",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+      "action_time": "2023-12-19T19:27:05.051Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "9",
+      "object_repr": "Тест 5 - test-5",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+      "action_time": "2023-12-19T19:27:05.051Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "Старт1 - start1",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Категория",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Категория",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Категория",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Категория",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Товар",
+      "content_type": 8,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Товар",
+      "content_type": 8,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Товар",
+      "content_type": 8,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Товар",
+      "content_type": 8,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add контакт",
+      "content_type": 9,
+      "codename": "add_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change контакт",
+      "content_type": 9,
+      "codename": "change_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete контакт",
+      "content_type": 9,
+      "codename": "delete_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view контакт",
+      "content_type": 9,
+      "codename": "view_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add блог",
+      "content_type": 10,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change блог",
+      "content_type": 10,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete блог",
+      "content_type": 10,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view блог",
+      "content_type": 10,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add версия",
+      "content_type": 11,
+      "codename": "add_versions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change версия",
+      "content_type": 11,
+      "codename": "change_versions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete версия",
+      "content_type": 11,
+      "codename": "delete_versions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view версия",
+      "content_type": 11,
+      "codename": "view_versions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add статус",
+      "content_type": 12,
+      "codename": "add_statusproduct"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change статус",
+      "content_type": 12,
+      "codename": "change_statusproduct"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete статус",
+      "content_type": 12,
+      "codename": "delete_statusproduct"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view статус",
+      "content_type": 12,
+      "codename": "view_statusproduct"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add номер версии",
+      "content_type": 13,
+      "codename": "add_numberversion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change номер версии",
+      "content_type": 13,
+      "codename": "change_numberversion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete номер версии",
+      "content_type": 13,
+      "codename": "delete_numberversion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view номер версии",
+      "content_type": 13,
+      "codename": "view_numberversion"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$WBqjL0APNGEUj1C5dRsGGI$gnJAtrWsJ1y+OfuNSkiwiO5nHuRuT3X9P7tamKwLR4Q=",
+      "last_login": "2023-12-16T09:24:05.571Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-12-02T18:11:24.670Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "catalog",
+      "model": "contacts"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "blog",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "catalog",
+      "model": "versions"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "catalog",
+      "model": "statusproduct"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "catalog",
+      "model": "numberversion"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "6splxyurderoxxr87il37jwifvtv4try",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBGOk3HpXvPQBgGpGpoUtqV8e5C0oWufvLey38r5_ctu73G1c2iLgrU6ZexD89YupCHL_dFh6Vs68y6J_qwVd8Wia_r0f4dZF9zv0VhsmkgK8Ce5Uwe0LQFGu04oBE0zRGlEAUkTiLECISpASuT-nwB5xU4bg:1r9UVF:j1IQyhFKQVatX9NEKLclHnZbDmFIJapP0VGN_sdInbU",
+      "expire_date": "2023-12-16T18:14:09.332Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "95paaytgyy1wepstoroe1n0qzulejboo",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBGOk3HpXvPQBgGpGpoUtqV8e5C0oWufvLey38r5_ctu73G1c2iLgrU6ZexD89YupCHL_dFh6Vs68y6J_qwVd8Wia_r0f4dZF9zv0VhsmkgK8Ce5Uwe0LQFGu04oBE0zRGlEAUkTiLECISpASuT-nwB5xU4bg:1r9WY3:ESByV4fDHTJZ3I6Zn0VgwpWqRhMy-qpG97_Ve7mKvbo",
+      "expire_date": "2023-12-16T20:25:11.696Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "b57sh3bk4p0r5h9bl9h5vqxilf9p8txm",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBGOk3HpXvPQBgGpGpoUtqV8e5C0oWufvLey38r5_ctu73G1c2iLgrU6ZexD89YupCHL_dFh6Vs68y6J_qwVd8Wia_r0f4dZF9zv0VhsmkgK8Ce5Uwe0LQFGu04oBE0zRGlEAUkTiLECISpASuT-nwB5xU4bg:1rCLjl:vaa0k9DLzS3fUpcYcn80hzJj_3zecN643PF1Qxw_T30",
+      "expire_date": "2023-12-24T15:28:57.001Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "konzs19bv6gyumaykkv5cdwyp4po8oxx",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBGOk3HpXvPQBgGpGpoUtqV8e5C0oWufvLey38r5_ctu73G1c2iLgrU6ZexD89YupCHL_dFh6Vs68y6J_qwVd8Wia_r0f4dZF9zv0VhsmkgK8Ce5Uwe0LQFGu04oBE0zRGlEAUkTiLECISpASuT-nwB5xU4bg:1rEQtx:grpesIdn6aAt-0UX05q1Wnwk4CxVF6dVhAY1J5Srpws",
+      "expire_date": "2023-12-30T09:24:05.572Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "l1xefyhy1f8lw972awrbfq16vdhlvg8k",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBGOk3HpXvPQBgGpGpoUtqV8e5C0oWufvLey38r5_ctu73G1c2iLgrU6ZexD89YupCHL_dFh6Vs68y6J_qwVd8Wia_r0f4dZF9zv0VhsmkgK8Ce5Uwe0LQFGu04oBE0zRGlEAUkTiLECISpASuT-nwB5xU4bg:1r9VJe:MLj7nuvudkMj2S-yoKkROWLQ9GZN9zRX4kxew3ERfF8",
+      "expire_date": "2023-12-16T19:06:14.845Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name_category": "Резисторы",
+      "description_category": "Пассивный элемент электроцепей с постоянным или переменным сопротивлением.",
+      "image": "category/rezistor.jpg"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name_category": "Транзисторы",
+      "description_category": "Электронный компонент из полупроводникового материала, способный небольшим входным сигналом управлять значительным током в выходной цепи, что позволяет использовать его для усиления, генерирования, коммутации и преобразования электрических сигналов.",
+      "image": "category/Транзисторы.jpg"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name_category": "Конденсаторы",
+      "description_category": "Конденсатор – это устройство, способное накапливать и моментально отдавать электрический заряд",
+      "image": "category/Конденсаторы.jpg"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name_category": "Диоды",
+      "description_category": "Диод-это двухполюсный электронный компонент, который проводит ток преимущественно в одном направлении (асимметричная проводимость)",
+      "image": "category/Диоды.jpg"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 5,
+    "fields": {
+      "name_category": "Реле",
+      "description_category": "Реле — электрическое устройство (выключатель), предназначенное для замыкания и размыкания различных участков электрических цепей при заданных изменениях электрических или неэлектрических входных величин.",
+      "image": "category/Реле.jpg"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 6,
+    "fields": {
+      "name_category": "Датчики",
+      "description_category": "Датчик - это устройство, которое выдает выходной сигнал с целью обнаружения физического явления.",
+      "image": "category/Датчики.png"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name_product": "Резистор RX27-1",
+      "description_product": "Мощный постоянный резистор 0.75 Ом 5W 5% / SQP5",
+      "name_category": 1,
+      "price": "9.00",
+      "image": "category/Резистор_RX27.jpg",
+      "created_at": "2023-01-09",
+      "updated_at": "2023-12-17",
+      "views_count": 6,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name_product": "Полевой транзистор 20N06",
+      "description_product": "20N06 N-канальный полевой транзистор для поверхностного монтажа в корпусе TO-252 (DPAK). Напряжение сток-исток 60 Вольт, максимальный ток стока 20 А. Сопротивление канала в открытом состоянии 38 мОм (при Vgs=10 В, Id =10 А).",
+      "name_category": 2,
+      "price": "12.00",
+      "image": "category/Tранзистор_20N06_KUU.jpg",
+      "created_at": "2023-01-09",
+      "updated_at": "2023-12-17",
+      "views_count": 12,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name_product": "Конденсатор RUICHI NPO",
+      "description_product": "Керамический конденсатор RUICHI NPO, 22 пкФ, 50 В - это конденсатор, у которого диэлектриком служит керамика на основе главным образом титанатов циркония, кальция, никеля и бария. Ёмкость таких устройств от долей пикофарады до нескольких микрофарад. Рабочее напряжение от нескольких десятков вольт до десятков киловольт.",
+      "name_category": 3,
+      "price": "2.00",
+      "image": "category/Конденсатор_RUICHI_NPO.jpg",
+      "created_at": "2023-01-09",
+      "updated_at": "2023-12-18",
+      "views_count": 7,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name_product": "Диод (супрессор) 1.5KE51A MIC",
+      "description_product": "1.5KE51A Однонаправленный TVS диод (супрессор) 43,6 Вольт выводной в корпусе DO-201 для сквозного монтажа. Максимальная импульсная мощность рассеивания 1500 Вт. Предназначен для защиты цепей от помех, вызванных грозовыми разрядами, переходными процессами и прочих.",
+      "name_category": 4,
+      "price": "12.00",
+      "image": "category/Диод_1.5KE51A.jpg",
+      "created_at": "2023-01-09",
+      "updated_at": "2023-12-17",
+      "views_count": 9,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name_product": "Реле промышленное RRP20-4-03-024D",
+      "description_product": "24В 4пк 3А РЭК78/4 б/роз",
+      "name_category": 5,
+      "price": "330.00",
+      "image": "category/Реле_RRP20.jpg",
+      "created_at": "2023-01-09",
+      "updated_at": "2023-12-17",
+      "views_count": 4,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name_product": "Датчик газа WINSEN MP905",
+      "description_product": "Датчик газа WINSEN MP905 предназначен для контроля качества воздуха. Он принимает многослойную технологию производства толстой пленки. Нагреватель и металлооксидный полупроводниковый материал на керамической подложке из сверхминиатюрного Al2O3 выведены электродным выводом, заключенным в металлическую втулку и крышку. На проводимость датчика влияет концентрация целевого газа. Чем выше концентрация, тем выше проводимость датчика.",
+      "name_category": 6,
+      "price": "330.00",
+      "image": "category/Датчик_газа_WINSEN_MP905.jpg",
+      "created_at": "2023-01-09",
+      "updated_at": "2023-12-17",
+      "views_count": 6,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name_product": "Резистор переменный, 16K1-10C10K, L15KC, 10 кОм",
+      "description_product": "Резистор регулировочный однооборотный, 10 кОм.",
+      "name_category": 1,
+      "price": "81.00",
+      "image": "category/Резистор_переменный_большой.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 1,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name_product": "Транзистор FGA40N65SMD, IGBT, Field Stop, 650В, 40А [TO-3PN]",
+      "description_product": "Биполярный транзистор с изолированным затвором или IGBT представляет собой силовой полупроводниковый прибор с тремя выводами, отличающийся высокой эффективностью и быстрым переключением.",
+      "name_category": 2,
+      "price": "775.00",
+      "image": "category/Транзистор_FGA40N65SMD.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 15,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name_product": "Конденсатор керамический дисковый 6.0 пФ х 50В,NPO, 5%",
+      "description_product": "Являются заменой отечественных конденсаторов типа К10-7В, К10-19, КД-2.\r\nДисковые конденсаторы имеют керамический диэлектрик, обеспечивающий устойчивую линейную зависимость емкости от температуры и используются для настройки контуров и др.",
+      "name_category": 3,
+      "price": "9.00",
+      "image": "category/Kondensator_keramika.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 7,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name_product": "Диодная защита для 4-х линий данных, DALC208SC6, [SOT-23-6]",
+      "description_product": "ESD PROTECTION ARRAY, SOT-23-6; Clamping Voltage Vc Max:-; Diode Case Style:SOT-23; No. of Pins:6Pins; Operating Voltage:1.2V; Power Dissipation Pd:-; Product Range:DALC2 Series; Automotive Qualification Standard:-; SVHC:No SVHC (17-Dec-2015); Diode Type:Low Capacitance",
+      "name_category": 4,
+      "price": "30.00",
+      "image": "category/Diod_DALC208SC6.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 3,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name_product": "Реле тепловое РТЛ-3 63-80A RTL-3-80",
+      "description_product": "Приставки контактные мгновенного действия и с задержкой срабатывания, блокировочные устройства устанавливаются на электромагнитные контакторы серии Effica и Engard для обеспечения возможности адаптации контакторов в системах автоматического управления нагрузками.",
+      "name_category": 5,
+      "price": "1790.00",
+      "image": "category/Rele_Engard.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-18",
+      "views_count": 4,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "name_product": "Фотодиод с усилителем, OPT101P, [DIP-8]",
+      "description_product": "Light Sensor Power supply: +2.7...+36 V Optical sensor range: 650 nm Series: OPT101 Package: DIL-8 Static current: 120 uA",
+      "name_category": 6,
+      "price": "3100.00",
+      "image": "category/Fotodiod.jpg",
+      "created_at": "2023-12-02",
+      "updated_at": "2023-12-17",
+      "views_count": 1,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 32,
+    "fields": {
+      "name_product": "Датчик",
+      "description_product": "Замеры углеводородов и их паров",
+      "name_category": 6,
+      "price": "120.00",
+      "image": "product/Fotodiod.jpg",
+      "created_at": "2023-12-19",
+      "updated_at": "2023-12-19",
+      "views_count": 1,
+      "slug": null
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 1,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 2,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 3,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 4,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Приветик"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 5,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 6,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 7,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 8,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 9,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 10,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 11,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 12,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 13,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 14,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 15,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 16,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 17,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 18,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 19,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.contacts",
+    "pk": 20,
+    "fields": {
+      "contact_name": "Aleksandr Strulkov",
+      "contact_email": "astrulkov@yandex.ru",
+      "contact_text": "Cпасибо"
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 32,
+    "fields": {
+      "product": 9,
+      "number_version": 1,
+      "name": 1,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 33,
+    "fields": {
+      "product": 9,
+      "number_version": 1,
+      "name": 2,
+      "active_version": false
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 34,
+    "fields": {
+      "product": 9,
+      "number_version": 3,
+      "name": 3,
+      "active_version": false
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 38,
+    "fields": {
+      "product": 5,
+      "number_version": 3,
+      "name": 3,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 39,
+    "fields": {
+      "product": 5,
+      "number_version": 2,
+      "name": 2,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 40,
+    "fields": {
+      "product": 2,
+      "number_version": 2,
+      "name": 2,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 41,
+    "fields": {
+      "product": 6,
+      "number_version": 3,
+      "name": 3,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 44,
+    "fields": {
+      "product": 2,
+      "number_version": 1,
+      "name": 1,
+      "active_version": false
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 45,
+    "fields": {
+      "product": 2,
+      "number_version": 3,
+      "name": 3,
+      "active_version": false
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 49,
+    "fields": {
+      "product": 12,
+      "number_version": 1,
+      "name": 1,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 50,
+    "fields": {
+      "product": 12,
+      "number_version": 2,
+      "name": 2,
+      "active_version": false
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 62,
+    "fields": {
+      "product": 8,
+      "number_version": 3,
+      "name": 3,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 63,
+    "fields": {
+      "product": 3,
+      "number_version": 2,
+      "name": 2,
+      "active_version": false
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 64,
+    "fields": {
+      "product": 3,
+      "number_version": 1,
+      "name": 1,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 65,
+    "fields": {
+      "product": 1,
+      "number_version": 3,
+      "name": 3,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 66,
+    "fields": {
+      "product": 11,
+      "number_version": 1,
+      "name": 1,
+      "active_version": false
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 67,
+    "fields": {
+      "product": 10,
+      "number_version": 2,
+      "name": 2,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 68,
+    "fields": {
+      "product": 7,
+      "number_version": 3,
+      "name": 3,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 69,
+    "fields": {
+      "product": 4,
+      "number_version": 1,
+      "name": 1,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 72,
+    "fields": {
+      "product": 11,
+      "number_version": 2,
+      "name": 2,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.versions",
+    "pk": 73,
+    "fields": {
+      "product": 32,
+      "number_version": 1,
+      "name": 1,
+      "active_version": true
+    }
+  },
+  {
+    "model": "catalog.statusproduct",
+    "pk": 1,
+    "fields": {
+      "status_name": "На складе"
+    }
+  },
+  {
+    "model": "catalog.statusproduct",
+    "pk": 2,
+    "fields": {
+      "status_name": "Доставка на склад"
+    }
+  },
+  {
+    "model": "catalog.statusproduct",
+    "pk": 3,
+    "fields": {
+      "status_name": "Нет в наличии у поставщика"
+    }
+  },
+  {
+    "model": "catalog.numberversion",
+    "pk": 1,
+    "fields": {
+      "status_name": 1
+    }
+  },
+  {
+    "model": "catalog.numberversion",
+    "pk": 2,
+    "fields": {
+      "status_name": 2
+    }
+  },
+  {
+    "model": "catalog.numberversion",
+    "pk": 3,
+    "fields": {
+      "status_name": 3
+    }
+  }
+]

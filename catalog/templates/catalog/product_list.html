@@ -5,9 +5,22 @@
     {% include 'catalog/includes/inc_catalog.html' %}
     <div class="container">
         <div class="row text-center" style="display: flex;flex-wrap: wrap;align-items: stretch;">
-            <div class="col-12 mb-5">
+            <div class="col-12 mb-3">
                 <a href="{% url 'catalog:product_create' %}">Добавить</a>
             </div>
+                <div class="container">
+                    <div class="col-12 text-center mb-3">
+                        {% if page_obj.has_other_pages %}
+                            {% if page_obj.has_previous %}
+                                <a class="btn btn-primary" href="?page={{ page_obj.previous_page_number }}">Назад</a>
+                            {% endif %}
+                            {% if page_obj.has_next %}
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                                <a class="btn btn-primary" href="?page={{ page_obj.next_page_number }}">Далее</a>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
             {% for object in object_list %}
                 <div class="col-4">
                     <div class="card-group mb-4">
@@ -28,12 +41,14 @@
                                     <p>Статус: {{ object.active_version_name }}</p>
                                 {% endif %}
                             </h6>
-                            <div class="card-footer">
+{#                        {% if perms.catalog.change_product %}#}
+                        <div class="card-footer">
                                 <a class="btn btn-link"
                                    href="{% url 'catalog:product_update' object.pk %}">Редактировать</a>
                                 <a class="btn btn-link" href="{% url 'catalog:product_delete' object.pk %}">Удалить</a>
                                 <small class="text-muted"></small>
                             </div>
+{#                        {% endif %}#}
                         </div>
                     </div>
                 </div>
@@ -41,3 +56,4 @@
         </div>
     </div>
 {% endblock %}
+

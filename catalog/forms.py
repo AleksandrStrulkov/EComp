@@ -46,7 +46,7 @@ class VersionForm(forms.ModelForm):
 		# exclude = ('product',)
 		fields = ('number_version', 'name', 'active_version')
 		widgets = {
-				'number_version': forms.NumberInput(attrs={'class': 'form-control'}),
+				'number_version': forms.Select(attrs={'class': 'form-control'}),
 				'name': forms.Select(attrs={'class': 'form-control'}),
 				'active_version': forms.NullBooleanSelect(attrs={'class': 'form-control'}),
 
@@ -67,3 +67,16 @@ class VersionBaseInlineFormSet(BaseInlineFormSet):
 		if active_list.count(True) > 1:
 			print("У продукта возможна только одна активная версия!")
 			raise forms.ValidationError("У продукта возможна только одна активная версия!")
+
+
+class ProductModeratorForm(forms.ModelForm):
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+		for field_name, field in self.fields.items():
+			if field_name != 'is_published':
+				field.widget.attrs['class'] = 'form-control'
+
+	class Meta:
+		model = Product
+		fields = ('is_published', 'description_product', 'name_category',)
+

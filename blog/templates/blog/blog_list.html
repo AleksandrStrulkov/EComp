@@ -3,9 +3,11 @@
 {% block content %}
     {% include 'catalog/includes/inc_catalog.html' %}
     <div class="container">
+    {% if perms.blog.add_blog %}
         <div class="col-12 mb-5">
             <a class="btn btn-outline-primary" href="{% url "blog:create" %}">Добавить материал</a>
         </div>
+    {% endif %}
         {% for object in object_list %}
             <div class="row text-center">
                 <div class="row my-2">
@@ -17,10 +19,14 @@
                                     <div class="btn-group">
                                         <a href="{% url 'blog:view' object.slug %}"
                                            class="mx-2 btn btn-sw btn-outline-primary">View</a>
+                                    {% if perms.blog.change_blog %}
                                         <a href="{% url 'blog:edit' object.slug %}" type="button"
                                            class="mx-2 btn btn-sw btn-outline-warning">Edit</a>
+                                     {% endif %}
+                                        {% if user.is_superuser %}
                                         <a href="{% url 'blog:delete' object.slug %}" type="button"
                                            class="mx-2 btn btn-sw btn-outline-danger">Delete</a>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>

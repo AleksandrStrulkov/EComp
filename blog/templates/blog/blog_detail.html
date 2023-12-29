@@ -11,6 +11,7 @@
                         <p class="card-text">{{ object.body }}</p>
                     </div>
                     <div class="card-footer">Просмотры: {{ object.views_count }}</div>
+                {% if perms.blog.change_blog %}
                     {% if object.is_published %}
                         <a class="btn btn-warning" href=
                                 "{% url 'blog:toggle_activity' object.slug %}">Деактивировать</a>
@@ -18,6 +19,7 @@
                         <a class="btn btn-success" href=
                                 "{% url 'blog:toggle_activity' object.slug %}">Активировать</a>
                     {% endif %}
+                {% endif %}
                 </div>
             </div>
             <div class="col-7">

@@ -1,17 +1,20 @@
 import slugify as slugify
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from pytils.translit import slugify
 
 from EComp import settings
+from blog.forms import BlogForm
 from blog.models import Blog
 from django.core.mail import send_mail
-# from config import settings
+
 
 class BlogCreateView(CreateView):
 	model = Blog
-	fields = ('title', 'body', 'image', 'is_published')
+	# permission_required = 'blog.add_blog'
+	form_class = BlogForm
 	success_url = reverse_lazy('blog:list')
 	extra_context = {
 			'title': "Добавить публикацию",
@@ -26,9 +29,10 @@ class BlogCreateView(CreateView):
 		return super().form_valid(form)
 
 
-class BlogUpdateView(UpdateView):
+class BlogUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
 	model = Blog
-	fields = ('title', 'body', 'image', 'is_published')
+	permission_required = 'blog.change_blog'
+	form_class = BlogForm
 	success_url = reverse_lazy('blog:list')
 	extra_context = {
 			'title': "Редактировать публикацию",
@@ -46,12 +50,15 @@ class BlogUpdateView(UpdateView):
 		return reverse('blog:view', args=[self.kwargs.get('slug')])
 
 
-class BlogDeleteView(DeleteView):
+class BlogDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 	model = Blog
 	success_url = reverse_lazy('blog:list')
 	extra_context = {
 			'title': "Удаление публикации",
 	}
+
+	def test_func(self):
+		return self.request.user.is_superuser
 
 
 class BlogListView(ListView):
@@ -97,3 +104,5 @@ def toggle_activity(request, slug):
 	blog_item.save()
 
 	return redirect(reverse('blog:list'))
+
+

@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.db import connection
 
@@ -34,6 +35,8 @@ class Product(models.Model):
 	updated_at = models.DateField(auto_now=True, verbose_name='Последнее изменение')
 	views_count = models.IntegerField(verbose_name='Просмотры', default=0)
 	slug = models.SlugField(verbose_name='slug', max_length=150, null=True, blank=True)
+	creator = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, **NULLABLE)
+	is_published = models.BooleanField(default=False, verbose_name='опубликовано')
 
 
 	def __str__(self):
@@ -65,9 +68,8 @@ class Contacts(models.Model):
 
 class Versions(models.Model):
 	product = models.ForeignKey('Product', on_delete=models.CASCADE, verbose_name='продукт')
-	number_version = models.IntegerField(verbose_name='номер версии')
+	number_version = models.ForeignKey('NumberVersion', on_delete=models.CASCADE, verbose_name='номер версии')
 	name = models.ForeignKey('StatusProduct', on_delete=models.CASCADE, verbose_name='наименование')
-	# name = models.CharField(max_length=50, verbose_name='наименование')
 	active_version = models.BooleanField(verbose_name='признак версии')
 
 	def __str__(self):
@@ -80,11 +82,17 @@ class Versions(models.Model):
 	@classmethod
 	def truncate_table_restart_id(cls):
 		with connection.cursor() as cursor:
-			cursor.execute(f'ALTER SEQUENCE catalog_version_id_seq RESTART WITH 1;')
+			cursor.execute(f'ALTER SEQUENCE catalog_versions_id_seq RESTART WITH 1;')
 
 
 class StatusProduct(models.Model):
-	status_name = models.CharField(max_length=150, verbose_name='статус товара на складе')
+	status_name = models.CharField(max_length=150, verbose_name='статус товара на складе', unique=True)
+
+	@classmethod
+	def truncate_table_restart_id(cls):
+		with connection.cursor() as cursor:
+			cursor.execute(f'ALTER SEQUENCE catalog_statusproduct_id_seq RESTART WITH 1;')
+
 
 	def __str__(self):
 		return f'{self.status_name}'
@@ -94,3 +102,17 @@ class StatusProduct(models.Model):
 		verbose_name_plural = 'статусы'
 
 
+class NumberVersion(models.Model):
+	status_name = models.IntegerField(verbose_name='номер версии', unique=True)
+
+	@classmethod
+	def truncate_table_restart_id(cls):
+		with connection.cursor() as cursor:
+			cursor.execute(f'ALTER SEQUENCE catalog_numberversion_id_seq RESTART WITH 1;')
+
+	def __str__(self):
+		return f'{self.status_name}'
+
+	class Meta:
+		verbose_name = 'номер версии'
+		verbose_name_plural = 'номера версии'
