@@ -12,6 +12,8 @@ from django.urls import reverse_lazy, reverse
 from users.forms import RegisterForm, UserProfileForm
 
 from django.core.signing import BadSignature
+
+from .services import send_new_password
 from .utilities import signer
 from django.core.mail import send_mail
 from django.conf import settings
@@ -70,13 +72,7 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
 @login_required
 def generate_new_password(request):
 	new_password = User.objects.make_random_password()
-	send_mail(
-			subject='Вы сменили пароль',
-			message=f'Ваш новый пароль: {new_password}',
-			from_email=settings.EMAIL_HOST_USER,
-			recipient_list=[request.user.email]
-	)
-
 	request.user.set_password(new_password)
 	request.user.save()
+	send_new_password(request.user.email, new_password)
 	return redirect(reverse('catalog:home'))

@@ -169,10 +169,6 @@ class CategoryListView(ListView):
 	}
 	paginate_by = 3
 
-	# def get_queryset(self):
-	# 	сach_category = cached_category()
-	# 	return сach_category
-
 
 class CatalogListView(LoginRequiredMixin, ListView):
 	model = Product
